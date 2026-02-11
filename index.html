@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SkyCast Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <aside class="search-section">
+            <h2>Search for a City:</h2>
+            <div class="input-group">
+                <input type="text" id="search-input" placeholder="E.g., London, New York">
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="search-history"></div>
+        </aside>
+
+        <main class="weather-display">
+            <section id="current-weather">
+                <h2>Select a city to view weather</h2>
+            </section>
+
+            <section class="forecast-section">
+                <h3>5-Day Forecast:</h3>
+                <div id="forecast-cards" class="cards-container">
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

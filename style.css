@@ -1,0 +1,72 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #3b82f6; /* Nice blue color */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar Styling */
+.search-section {
+    width: 25%; /* Takes up 1/4 of the screen */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* Weather Display Styling */
+.weather-display {
+    width: 75%; /* Takes up 3/4 of the screen */
+}
+
+#current-weather {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Forecast Card Grid */
+.cards-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
