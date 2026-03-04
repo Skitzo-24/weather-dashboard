@@ -17,8 +17,10 @@
             <h2>Search for a City:</h2>
             <div class="input-group">
                 <input type="text" id="search-input" placeholder="E.g., London, New York">
+                <input type="text" id="country-input" placeholder="Country code (optional): PH, US, GB">
                 <button id="search-btn">Search</button>
             </div>
+            <div id="error-message"></div>
             <div id="search-history"></div>
         </aside>
 
@@ -34,7 +36,7 @@
             </section>
         </main>
     </div>
-
+    <script src="config.js"></script>  
     <script src="script.js"></script>
 </body>
 </html>

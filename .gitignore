@@ -1,0 +1,5 @@
+# Secret keys - never commit this
+config.js
+
+# Temporary files
+tmpclaude-*
