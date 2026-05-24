@@ -9,30 +9,43 @@
 <body>
 
     <header>
-        <h1>SkyCast Weather Dashboard</h1>
+        <div class="header-copy">
+            <p class="eyebrow">SkyCast</p>
+            <h1>Weather Dashboard</h1>
+            <p class="header-subtitle">Search a city, use your location, and compare the next five days.</p>
+        </div>
     </header>
 
     <div class="container">
         <aside class="search-section">
-            <h2>Search for a City:</h2>
+            <h2>Find weather</h2>
             <div class="input-group">
                 <input type="text" id="search-input" placeholder="E.g., London, New York">
                 <input type="text" id="country-input" placeholder="Country code (optional): PH, US, GB">
-                <button id="search-btn">Search</button>
             </div>
-            <div id="error-message"></div>
-            <div id="search-history"></div>
+            <div class="control-row">
+                <button id="search-btn" type="button">Search</button>
+                <button id="location-btn" type="button">Use my location</button>
+                <button id="units-btn" type="button" aria-pressed="false">Switch to °F</button>
+            </div>
+            <div id="status-message" aria-live="polite"></div>
+            <div id="error-message" aria-live="polite"></div>
+            <div class="history-panel">
+                <div class="section-label">Recent searches</div>
+                <div id="search-history"></div>
+            </div>
         </aside>
 
         <main class="weather-display">
-            <section id="current-weather">
-                <h2>Select a city to view weather</h2>
-            </section>
+            <section id="current-weather" class="weather-card"></section>
 
-            <section class="forecast-section">
-                <h3>5-Day Forecast:</h3>
+            <section class="forecast-section weather-card">
+                <div class="section-heading">
+                    <h3>5-Day Forecast</h3>
+                    <p>Daily snapshots at noon, with temperatures and rain chance.</p>
+                </div>
                 <div id="forecast-cards" class="cards-container">
-                    </div>
+                </div>
             </section>
         </main>
     </div>
